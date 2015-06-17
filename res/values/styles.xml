@@ -1,0 +1,49 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+       <item name="android:textColor">@color/game</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarTabStyle">@style/CustomActionBarTheme.TabView</item>
+        <item name="actionBarTabStyle">@style/CustomActionBarTheme.TabView</item>
+        <item name="android:actionBarTabBarStyle">@style/CustomActionBarTheme.TabBar</item>
+        <item name="actionBarTabBarStyle">@style/CustomActionBarTheme.TabBar</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- ActionBar tabs styles -->
+    <style name="CustomActionBarTheme.TabView">
+
+        <!-- tab indicator -->
+        <item name="android:background">@drawable/tab_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="CustomActionBarTheme.TabBar">
+
+        <!-- tab indicator -->
+        <item name="android:showDividers">none</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+    </style>
+
+    <style name="CustomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

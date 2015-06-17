@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KKABA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_join">JoinActivity</string>
+    <string name="nick">닉네임을 입력하세요</string>
+    <string name="app_id">1516520791959861</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="COLLECTION_CODE_ROCK">바위</string>
+    <string name="COLLECTION_CODE_SCISSOR">가위</string>
+    <string name="COLLECTION_CODE_PAPER">보</string>
+    <string name="defaultBadge">안알랴쥼</string>
+    <string name="title_activity_peep">PeepActivity</string>
+    <string name="title_activity_result_popup">ResultPopupActivity</string>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#f6f6f6"
+    android:id="@+id/list_context" 
+    android:orientation="horizontal"
+    android:weightSum="100">
+    
+    <FrameLayout 
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"></FrameLayout>
+    
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="24" >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_badge"
+            android:layout_centerInParent="true"
+			android:layout_margin="10dp"
+            android:src="@drawable/badge_1"/>
+
+        <ImageView
+            android:id="@+id/list_state"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/list_badge"
+            android:layout_alignRight="@+id/list_badge"
+            android:src="@drawable/alert_badge" />
+        
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"></FrameLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="48"
+        android:weightSum="100" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+  			android:layout_weight="20"/>
+        <TextView
+            android:id="@+id/list_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+  			android:layout_weight="35"
+            android:text="지또니코틴"
+            android:textSize="9pt"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/list_log"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:text="나랑 노라주떼염"
+            android:textSize="7pt"
+            android:textColor="#999999" />
+</LinearLayout>
+        <TextView
+            android:id="@+id/list_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+			android:layout_weight="20"
+            android:text="2015.04.08"
+            android:textSize="7pt"
+            android:textColor="#999999" />
+ </LinearLayout>

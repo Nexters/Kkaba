@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e8e8"
+    android:orientation="vertical"
+    android:weightSum="100">
+    
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="4"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"/>
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:src="@drawable/badge_paper_310"/>
+        
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+        
+        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="60"
+	        android:orientation="vertical"
+	        android:weightSum="100">
+	        <ImageView
+	            android:layout_width="match_parent"
+        	    android:layout_height="0dp"
+        	    android:layout_weight="30"/>
+        	<TextView
+        	    android:id="@+id/myId"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="0dp"
+        	    android:layout_weight="20"
+        	    android:text="까바노바"
+        	    android:textColor="#333333"
+        	    android:textStyle="bold"/>
+        	<LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="0dp"
+        	    android:layout_weight="20"
+        	    android:orientation="horizontal"
+        	    android:weightSum="100">
+        	    
+        	    <TextView 
+        	        android:id="@+id/peepNum"
+        	        android:layout_width="0dp"
+        	        android:layout_height="match_parent"
+        	        android:layout_weight="10"
+        	        android:text=" 3"
+        	        android:textColor="#00cc99"/>
+        	    
+        	    <TextView 
+        	        android:layout_width="0dp"
+        	        android:layout_height="match_parent"
+        	        android:layout_weight="90"
+        	        android:text="/ 30"
+        	        android:textColor="#666666"/>"
+        	    
+        	</LinearLayout>
+        	<ImageView
+	            android:layout_width="match_parent"
+        	    android:layout_height="0dp"
+        	    android:layout_weight="30"/>
+        
+     </LinearLayout>   
+    </LinearLayout>
+ <ListView 
+        android:id="@+id/list_peep"
+        android:layout_width="match_parent" 
+    	android:layout_height="0dp"
+    	android:layout_weight="75">
+        
+    </ListView>
+</LinearLayout>

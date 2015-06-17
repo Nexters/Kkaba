@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="2.5" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_profile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/infoRowIndexImage"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/bullet_profile_up" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/infoRowIndexText"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/infoRowInfoKey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="35"
+        android:gravity="center_vertical"
+        android:text="asdasd"
+        android:textColor="#333333"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/infoRowInfoValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="45"
+        android:gravity="center_vertical|right"
+        android:text="asdsad"
+        android:textColor="#0CC59C"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/infoRowPictureImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="45"
+        android:src="@drawable/kkaba_icon" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5" />
+
+</LinearLayout>

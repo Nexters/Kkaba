@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_transparent">#ff686f</color>
+    <color name="tab_highlight">#f6545b</color>
+    <color name="tab_focused">#f6545b</color>
+    <color name="transparent">#00000000</color>
+    <color name="game">#333333</color>
+</resources>

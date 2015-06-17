@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/resultDialog"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.teamnexters.kkaba.client.game.ResultPopupDialog"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/bg_match" >
+
+   	<ImageView 
+   	    android:id="@+id/match_draw"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:scaleType="centerInside"
+   	    android:layout_centerInParent="true"
+   	    android:src="@drawable/match_draw"
+   	    android:visibility="gone"/>
+
+   	<ImageView
+   	    android:id="@+id/match_win"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_centerInParent="true"
+   	    android:src="@drawable/match_win"
+   	    android:visibility="gone" />
+
+   	<ImageView 
+   	    android:id="@+id/match_lose"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:scaleType="centerInside"
+   	    android:layout_centerInParent="true"
+   	    android:src="@drawable/match_lose"
+   	    android:visibility="gone"/>
+    
+
+</RelativeLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" />
+
+    <ImageView
+        android:id="@+id/badge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="22"
+        android:src="@drawable/badge_paper_310" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="8"
+        android:gravity="center_horizontal"
+        android:text="까바고수"
+        android:textSize="13pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_weight="22"
+                android:gravity="center_horizontal"
+                android:text="Total"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/win"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="22"
+                android:gravity="center_horizontal"
+                android:text="승"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/same"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="22"
+                android:gravity="center_horizontal"
+                android:text="무"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="22"
+                android:gravity="center_horizontal"
+                android:text="패"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="#f3f1f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <ImageView
+                android:id="@+id/rock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="10"
+                android:src="@drawable/icon_main_dashboard_rock" />
+
+            <TextView
+                android:id="@+id/total_rock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="18"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/win_rock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/draw_rock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="21"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/lose_rock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <ImageView
+                android:id="@+id/scissor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="10"
+                android:src="@drawable/icon_main_dashboard_scissor" />
+
+            <TextView
+                android:id="@+id/total_scissor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="18"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/win_scissor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/draw_scissor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="21"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/lose_scissor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="#f3f1f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <ImageView
+                android:id="@+id/paper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="10"
+                android:src="@drawable/icon_main_dashboard_paper" />
+
+            <TextView
+                android:id="@+id/total_paper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="18"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/win_paper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/draw_paper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="21"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/lose_paper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="7pt" />
+        </LinearLayout>
+    </LinearLayout>
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="32" >
+
+        <LinearLayout
+            android:id="@+id/layout_game_start"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="32" >
+
+            <Button
+                android:id="@+id/game_start"
+                android:layout_width="160dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="28"
+                android:background="@drawable/button_game_start" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_main_start" />
+
+    </RelativeLayout>
+
+</LinearLayout>
